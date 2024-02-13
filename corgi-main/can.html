@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/css/styles.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Can I ask you something????</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/5dUllWbKVlaqmMTvHb/giphy.gif?cid=790b761177mkcy1xpqv6nxmigexf6mzl9k9iu66ru2xrhplr&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onclick="nextPage()">yes</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "sorry.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style/css/styles.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">"Would you do me the honor of being my Valentine and sharing in the joy of celebrating love together?"</h1>
+                <h1 class = "header_text">plsssssssssss ◡̈◡̈◡̈◡̈◡̈</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://gifdb.com/images/thumbnail/animated-heart-tongue-out-funny-love-pwra2ig4r4x1uqvb.webp" alt="Cute animated illustration">
+                <img src="https://media.tenor.com/uR015Jdl6voAAAAi/smooch-cute.gif" alt="Cute animated illustration">
+                <img src="https://media.tenor.com/qacdcYlYSRoAAAAM/heart-twerk.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
